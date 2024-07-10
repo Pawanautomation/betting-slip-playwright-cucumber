@@ -1,7 +1,7 @@
 # betting-slip-playwright-cucumber
 betting-slip-playwright-cucumber
 Betting Slip Playwright-Cucumber Automation
-This repository contains automated test cases for the betslip functionality on an iGaming website using Playwright, TypeScript, and Cucumber.
+This repository contains automated test cases for the betslip functionality on an Gaming website using Playwright, TypeScript, and Cucumber.
 
 Prerequisites
 Node.js (version 14.x or higher)
