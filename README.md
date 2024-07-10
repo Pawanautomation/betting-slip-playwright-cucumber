@@ -73,6 +73,5 @@ Feel free to reach out to the repository owner for any questions or assistance.
 - **playwright.config.ts**: Playwright configuration for browser setup and reporting.
 - **generate-report.js**: Generates the HTML report from the test results.
 - **cucumber.js**: Configuration for running Cucumber tests.
-- **.env (Example)**: Example file demonstrating the `BASE_URL` environment variable.
 ```
 
