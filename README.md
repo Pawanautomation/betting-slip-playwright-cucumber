@@ -20,5 +20,5 @@ This repository holds automated tests for a Gaming website's betslip functionali
 git clone https://github.com/Pawanautomation/betting-slip-playwright-cucumber.git
 cd betting-slip-playwright-cucumber
 
-Install Dependencies:
+#### Install Dependencies:
 npm install
