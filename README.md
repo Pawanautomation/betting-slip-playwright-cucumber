@@ -1,13 +1,11 @@
-It looks like there is a formatting issue where the "Install Dependencies" section is being included under the "Clone the Repository" code block. To fix this, ensure each section is clearly separated. Here is the corrected version:
-
 ```markdown
 # Automated Betslip Testing with Playwright, TypeScript & Cucumber
 
-This repository holds automated tests for a Gaming website's betslip functionality. It utilizes Playwright for browser automation and Cucumber for Behavior Driven Development (BDD).
+This repository holds automated tests for a Gaming website's bet slip functionality. It utilizes Playwright for browser automation and Cucumber for Behavior Driven Development (BDD).
 
 ## What's Included
 
-- Test cases written in TypeScript for the betslip functionality.
+- Test cases are written in TypeScript for the bet slip functionality.
 - Page Object Model (POM) for efficient test organization.
 
 ## Prerequisites
@@ -62,7 +60,7 @@ An HTML report (`cucumber_report.html`) will be created after running the tests.
 
 ## Additional Notes
 
-- Ensure your local application is running at the URL specified in the `.env` file.
+- Ensure your local application runs at the URL specified in the `.env` file.
 - If you encounter issues, verify that dependencies are installed and environment variables are set correctly.
 
 ## Contact
@@ -78,4 +76,3 @@ Feel free to reach out to the repository owner for any questions or assistance.
 - **.env (Example)**: Example file demonstrating the `BASE_URL` environment variable.
 ```
 
-This format should ensure that each section is properly separated and displayed correctly in your README file.
