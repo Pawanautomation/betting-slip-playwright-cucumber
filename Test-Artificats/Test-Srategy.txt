@@ -1,0 +1,51 @@
+Test Strategy for Betting Slip Application
+
+1. Introduction
+
+This document outlines the overall test strategy for the Betting Slip application. It defines the approach, types of testing to be performed (manual vs. automation), and the overall testing objectives.
+
+2. Approach
+
+The testing approach will be a combination of manual and automated testing techniques.
+
+Manual Testing: This will cover core functionalities, user interface (UI) elements, user experience (UX), error handling, and various user scenarios.
+Automated Testing: Unit tests will be implemented for critical calculations (odds, stake, and profit) to ensure their accuracy and consistency. Additionally, UI automation can be considered for repetitive tasks like adding/removing selections and basic validations.
+3. Testing Objectives
+
+Ensure the application functions as intended according to the requirements.
+Verify all UI elements are displayed correctly and respond to user interactions.
+Validate calculations for stake, odds, and potential profit are accurate.
+Test error handling mechanisms for invalid user inputs and unexpected conditions.
+Evaluate the overall user experience and identify any usability issues.
+4. Test Levels and Coverage
+
+Unit Testing (Automated): Focus on core functionalities like calculations and data manipulation.
+Integration Testing (Manual): Verify interaction between different components like betslip and confirmation functionality.
+System Testing (Manual): Test the overall application behavior, including adding selections, managing bets, and user workflows.
+Usability Testing (Manual): Evaluate the user interface, user experience, and overall ease of use.
+5. Automation Scope
+
+High priority: Automate unit tests for critical calculations (stake, odds, profit) to ensure their accuracy and reliability.
+Optional: Implement UI automation tests for repetitive tasks like adding/removing selections from the betslip and basic validations on user input.
+6. Manual Testing Scope
+
+All UI elements and functionalities (adding selections, stake adjustment, bet confirmation, etc.)
+User experience and workflow testing for various scenarios (adding/removing bets, using bonus options, etc.)
+Error handling and edge case testing (invalid inputs, unexpected conditions)
+Accessibility testing to ensure the application is usable by users with disabilities
+7. Tools and Techniques
+
+Manual Testing: Utilize exploratory testing, test case design techniques, and user experience evaluation methods.
+Automation Testing: A testing framework like JEST or Mocha can be used for unit test automation. Consider UI automation tools like Playwright if needed for broader automation.
+8. Reporting and Defect Management
+
+All test results will be documented and logged in a test management tool.
+Identified defects will be reported with detailed descriptions, steps to reproduce, and expected behavior.
+9. Test Schedule and Resources
+
+The test schedule will be integrated with the overall development timeline.
+Manual testing will be primarily conducted by a dedicated QA tester.
+Automation efforts will depend on available resources and the complexity of automation chosen.
+10. Conclusion
+
+This test strategy provides a framework for comprehensive testing of the Betting Slip application. By combining manual and automated testing techniques, we aim to ensure the application delivers a high-quality and user-friendly experience

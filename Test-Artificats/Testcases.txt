@@ -1,0 +1,42 @@
+Betting Slip Application Test Cases
+Test cases are categorized based on functionalities and include manual and potential automation candidates.
+
+1. Adding Selections
+
+TC_01_Add_Selection: Verify adding a selection from the table populates the betslip with the correct name and odds. (Manual)
+TC_02_Add_Multiple_Selections: Verify adding multiple selections from the table displays them individually in the betslip. (Manual)
+TC_03_Duplicate_Selection: Test adding the same selection twice. The betslip should not display duplicates. (Manual)
+2. Stake & Odds Input
+
+TC_04_Valid_Stake: Verify the application accepts valid stake values (positive numbers). (Manual)
+TC_05_Invalid_Stake: Test entering invalid stake values (negative numbers, zero, non-numeric characters). The application should display appropriate error messages. (Manual)
+TC_06_Stake_Change: Verify changes in stake input update the potential profit calculation. (Manual/Automation)
+TC_07_Valid_Odds: Verify the application accepts valid odds values (positive numbers greater than 1). (Manual)
+TC_08_Invalid_Odds: Test entering invalid odds values (negative numbers, less than or equal to 1, non-numeric characters). The application should display appropriate error messages. (Manual)
+TC_09_Odds_Change: Verify changes in odds input update the potential profit calculation. (Manual/Automation)
+3. Calculations
+
+TC_10_Profit_Calculation: Verify the potential profit is calculated correctly based on the formula: stake * (odds - 1). (Automation)
+TC_11_Edge_Case_Profit: Test calculations for stake and odds at the edge (e.g., stake = 0, odds = 1.01). The profit should be calculated accurately. (Manual/Automation)
+4. Betslip Management
+
+TC_12_Clear_Betslip: Verify the "Cancel all selections" button removes all selections from the betslip and resets the liability amount. (Manual)
+TC_13_Betslip_Persistence: If applicable, test if selections and user input (stake) are persisted across page refreshes. (Manual)
+5. User Interface (UI) & User Experience (UX)
+
+TC_14_UI_Elements: Verify all UI elements (buttons, input fields, labels) are displayed correctly and visually appealing. (Manual)
+TC_15_Responsiveness: Test the application layout and functionality across different screen sizes and devices. (Manual)
+TC_16_User_Friendliness: Evaluate the overall user experience for adding selections, managing bets, and understanding information. (Manual)
+6. Error Handling & Edge Cases
+
+TC_17_Empty_Betslip_Place_Bet: Test clicking "Place bets" when the betslip is empty. The application should display an appropriate message. (Manual)
+TC_18_Network_Error: Simulate a network error during communication with the server (if applicable). The application should handle it gracefully and inform the user. (Manual)
+TC_19_Large_Stake: Test entering a very large stake value exceeding a reasonable limit (if applicable). The application should display a warning or prevent such bets. (Manual)
+7. Confirmation & Placement
+
+TC_20_Confirmation_Checkbox: Verify the "Confirm bets before placing" checkbox functions as expected. (Manual)
+TC_21_Place_Bets: Test placing bets with and without confirmation (depending on the checkbox selection). The application should provide appropriate feedback messages. (Manual)
+8. Bonus Functionality (Optional)
+
+TC_22_Bonus_Checkbox: If a bonus option exists, verify the checkbox selection toggles its application on the betslip. (Manual)
+TC_23_Bonus_Functionality: Test the functionality of the bonus option if applicable (e.g., calculates a reduced stake or applies a promotion). (Manual)
