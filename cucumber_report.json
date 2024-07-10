@@ -1,0 +1,407 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "betslip-functionality;verify-default-bet-and-profit",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify default bet and profit",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the betslip page",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I add a Labour Majority bet",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the bet should be present in the betslip",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the default odds should be 1.02 and the default stake should be 100",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the profit should be correctly calculated for the default values",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 150000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "betslip-functionality;verify-profit-calculation-after-changing-odds",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify profit calculation after changing odds",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I navigate to the betslip page",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I add a Labour Majority bet",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I change the odds to a random value between 1.01 and 1.99",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1022000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the profit should be correctly updated",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 136000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "betslip-functionality;verify-profit-calculation-after-changing-stake",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Verify profit calculation after changing stake",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I navigate to the betslip page",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 338000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I add a Labour Majority bet",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I change the stake to a random value between 10 and 1000",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1014000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the profit should be correctly updated",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 137000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "betslip-functionality;verify-profit-calculation-after-changing-odds-and-stake",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Verify profit calculation after changing odds and stake",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I navigate to the betslip page",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 329000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I add a Labour Majority bet",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I change the odds to a random value between 1.01 and 1.99",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I change the stake to a random value between 10 and 1000",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1042000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the profit should be correctly updated",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 145000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "betslip-functionality;cancel-bets-and-verify-empty-betslip",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Cancel bets and verify empty betslip",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I navigate to the betslip page",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 291000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I add a Labour Majority bet",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I cancel all selections",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1105000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the betslip should be empty",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "the calculated profit and liability should be zero",
+            "match": {
+              "location": "tests\\stepDefinitions\\betslipSteps.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "betslip-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Betslip Functionality",
+    "tags": [],
+    "uri": "tests\\features\\betslip.feature"
+  }
+]

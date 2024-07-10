@@ -1,0 +1,21 @@
+{
+  "name": "bet-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "test": "npx cucumber-js && node generate-report.js",
+    "cucumber": "cucumber-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "@faker-js/faker": "^7.3.0",
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10",
+    "cucumber-html-reporter": "^7.1.1",
+    "dotenv": "^10.0.0"
+  }
+}
